@@ -1,0 +1,16 @@
+# python create_art.py
+
+import math
+import random
+
+class CreateArt:
+
+    def create_expressions(self):
+        self.number = lambda x, y: ((math.tan(math.cos(math.sin(x))))**1/y*2)
+
+    def run_expressions(self, number, x, y):
+        return self.number(x, y)
+
+x = CreateArt()
+x.create_expressions()
+x.run_expressions(x.number, 3, 4)
